@@ -9,9 +9,12 @@ namespace DailyProgrammer349
     {
         static void Main(string[] args)
         {
-            var ih = new InputHandler("3 34312332");
+            //var ih = new InputHandler("3 34312332");
+            var fileInputReader = new FileInputGetter(@"C:\Users\Nick\source\repos\DailyProgrammer349\DailyProgrammer349\input.txt");
+            var ih = new InputHandler(fileInputReader.GetInput());
             var bsvc = new BoxStackingViabilityChecker(ih);
-            
+
+
             if (bsvc.GetBoxStackingPossibility() == true)
             {
                 var bs = new BoxStacker(ih, bsvc.GetDivisibility());

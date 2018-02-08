@@ -59,6 +59,8 @@
   <ItemGroup>
     <Compile Include="BoxStacker.cs" />
     <Compile Include="BoxStackingViabilityChecker.cs" />
+    <Compile Include="FileInputGetter.cs" />
+    <Compile Include="IInputGetter.cs" />
     <Compile Include="IInputHandler.cs" />
     <Compile Include="InputHandler.cs" />
     <Compile Include="Program.cs" />
